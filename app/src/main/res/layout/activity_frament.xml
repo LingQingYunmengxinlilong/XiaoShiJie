@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.meng.xue.xiaoshijie.FramentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/main_framelayout_01">
+    </FrameLayout>
+
+    <View  android:layout_height="1px"
+    android:layout_width="match_parent"
+    android:background="#66CCFF"
+    />
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/main_bwn_rg"
+        android:background="#fff" >
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="首页〉"
+            android:gravity="center"
+            android:button="@null"
+            android:id="@+id/main_bwn_rb1"
+            android:textColor="#000"
+            android:drawableTop="@drawable/homepage" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="精品"
+            android:gravity="center"
+            android:textColor="#000"
+            android:button="@null"
+            android:id="@+id/main_bwn_rb2"
+            android:drawableTop="@drawable/boutique"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="折扣"
+            android:gravity="center"
+            android:textColor="#000"
+            android:button="@null"
+            android:drawableTop="@drawable/discount"
+            android:id="@+id/main_bwn_rb3"/>
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我的"
+            android:gravity="center"
+            android:textColor="#000"
+            android:button="@null"
+            android:drawableTop="@drawable/mylo"
+            android:id="@+id/main_bwn_rb4"/>
+
+    </RadioGroup>
+
+</LinearLayout>
